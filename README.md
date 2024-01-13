@@ -23,7 +23,7 @@ A web-based application that allows you to write, run, load, and save JavaScript
 
 1. Clone the repository from GitHub.
    ```
-   git clone https://github.com/ChatDev/JavaScript-Code-Editor.git
+   git clone https://github.com/mastashake08/JavaScript-Code-Editor.git
    ```
 2. Navigate into the project directory.
    ```
