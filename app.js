@@ -5,7 +5,7 @@ document.getElementById('run-btn').addEventListener('click', function() {
         eval(code);
     } catch (err) {
         console.error(err);
-        alert('Error:: ', err.message)
+        alert('Error:: ', err)
     }
 });
 document.getElementById('load-btn').addEventListener('click', function() {
