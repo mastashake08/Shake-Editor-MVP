@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online JavaScript Editor</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="p-10">
+    <div class="flex flex-col h-screen">
+        <div class="mb-4">
+            <button id="run-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Run</button>
+            <button id="load-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Load</button>
+            <button id="save-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Save</button>
+        </div>
+        <textarea id="code-editor" class="border rounded w-full h-full"></textarea>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

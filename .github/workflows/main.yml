@@ -1,0 +1,19 @@
+'''
+This YAML file is used to configure a GitHub Action for deploying the application. It is triggered on push events to the master branch and uses the actions/checkout and peaceiris/actions-gh-pages actions to deploy the application to GitHub Pages.
+'''
+name: Deploy
+on:
+  push:
+    branches:
+      - master
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./
